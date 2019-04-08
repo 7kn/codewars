@@ -6,11 +6,9 @@ def find_short(s):
     
     for word in word_list:
       word_len_dict[word] = len(word)
-      print(word_len_dict)
     
     smallest_key = min(word_len_dict, key= lambda x: word_len_dict.get(x))
     l = word_len_dict[smallest_key]
-    print(l)
     
     return l # l: shortest word length
 
